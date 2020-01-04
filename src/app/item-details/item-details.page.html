@@ -1,0 +1,29 @@
+<ion-header> 
+  <ion-toolbar color="primary">
+
+      <ion-buttons slot="start">
+          <ion-back-button name="md-arrow-back" ></ion-back-button>
+      </ion-buttons>
+    
+    <ion-title> {{Selected_Name}} </ion-title>
+
+  </ion-toolbar>
+
+
+</ion-header>
+
+<ion-content>
+   
+  <ion-list>
+     
+    <ion-item *ngFor="let link of links;index as i" >
+        <ion-label>
+        <iframe width="300" height="100" [src]="videoURL(i)"></iframe>
+        
+      </ion-label>
+        
+      </ion-item>
+
+    </ion-list>
+    
+</ion-content>

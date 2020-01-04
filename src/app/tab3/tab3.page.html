@@ -1,9 +1,57 @@
-<ion-header>
-  <ion-toolbar>
+ <ion-header>   
+  <ion-toolbar  color="primary"> 
     <ion-title>
-      Tab Three
+     My Profile
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content >
+    <div class="list card">
+
+      <ion-item class="profile-item">
+        <div class="profile-picture big-profile-picture">
+          <img src="data:image/jpeg;base64,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" alt ="smile">
+        </div>
+
+      </ion-item>
+
+
+      <ion-item class="profile-item">
+          <ion-icon name="ios-contact"></ion-icon>
+          <ion-label class="my-label" > User name </ion-label>
+          <ion-input name="name" type="name" placeholder="User name"  [(ngModel)]="username" (ionChange)="presentAlert()" required></ion-input>
+      </ion-item>
+
+      <ion-item class="profile-item">
+          <ion-icon name="ios-mail"></ion-icon>
+          <ion-label class="my-label" > Gmail </ion-label>
+          <ion-input name="email" type="email" placeholder="your@email.com" [(ngModel)]="gmail"  required></ion-input>
+      </ion-item>
+
+      <!-- <ion-item class="profile-item"> 
+        <ion-icon name="ios-calendar"></ion-icon>
+        <ion-label class="my-label" >Date of birth</ion-label>
+
+          <ion-datetime displayFormat="MM/DD/YYYY" placeholder="Select Date" [(ngModel)]="dob" required ></ion-datetime>
+      </ion-item>-->
+
+      <ion-item class="profile-item">
+          <ion-icon name="ios-lock"></ion-icon>
+          <ion-label class="my-label" > Password </ion-label>
+          <ion-input name="password" type="password" placeholder="password" [(ngModel)]="password"  required></ion-input>
+      </ion-item>
+
+     <ion-item button class="profile-item" (click)="logout()"> 
+        <ion-icon item-left color="primary" name="log-out"></ion-icon>
+          Logout
+      </ion-item > 
+
+      <ion-item button class="profile-item" (click)="deleteMyAccount()"> 
+        <ion-icon item-left color="primary" ios="ios-remove-circle" md="md-remove-circle"></ion-icon>
+          Delete my account
+      </ion-item > 
+    
+    </div>
+
+</ion-content>
